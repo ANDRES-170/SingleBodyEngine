@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="640" height="480">
+
+    </canvas>
+
+    <div id="info_display">
+        <div id="pos_x">
+            0
+        </div>
+        <div id="pos_y">
+            0
+        </div>
+        <div id="vel_x">
+            0
+        </div>
+        <div id="vel_y">
+            0
+        </div>
+        <div id="acc_x">
+            0
+        </div>
+        <div id="acc_y">
+            0
+        </div>
+        <div id="res_coef">
+            0
+        </div>
+    </div>
+
+    <div id="settings"></div>
+        <div id="set_pos_x">
+            Set Position in X:
+            <input type="number" name="" id="set_pos_x_value" min="0" max="640" value="">
+        </div>
+        <div id="set_pos_y">
+            Set Position in Y:
+            <input type="number" name="" id="set_pos_y_value" min="0" max="480" value="">
+        </div>
+        <div id="set_vel_x">
+            Set Velocity in X:
+            <input type="number" name="" id="set_vel_x_value" min="-50" max="50" value="">
+        </div>
+        <div id="set_vel_y">
+            Set Velocity in Y:
+            <input type="number" name="" id="set_vel_y_value" min="-50" max="50" value="">
+        </div>
+        <div id="set_acc_x">
+            Set Acceleration in X:
+            <input type="number" name="" id="set_acc_x_value" min="-10" max="10" value="">
+        </div>
+        <div id="set_acc_y">
+            Set Acceleration in Y:
+            <input type="number" name="" id="set_acc_y_value" min="-10" max="10" value="">
+        </div>
+        <div id="set_res_coef">
+            <div id="set_res_coef"></div>
+                Set Restitution Coefficient (µ):
+            </div>
+            <input type="range" name="" id="set_res_coef_value" min="0" max="1" step="0.05" value="1">
+        </div>
+        <div id="set_apply">
+            <input type="button" value="Apply" id="set_apply_button">
+        </div>
+        <div id="set_reset">
+            <input type="button" value="Reset" id="set_reset_button">
+        </div>
+    </div>
+
+    <script src="Physics.js"></script>
+    <!--script src="engine.js"></script-->
+</body>
+</html>
